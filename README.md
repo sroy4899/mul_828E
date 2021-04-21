@@ -9,11 +9,15 @@ From there, we intend to investigate some of the most popular techniques for mac
 In full, we intend to test  
 1) naive unlearning via retraining from scratch  
 2) SISA untraining 
+    + https://github.com/cleverhans-lab/machine-unlearning
 3) Newton-based methods à la Guo et al. 
+    + https://github.com/facebookresearch/certified-removal
 4) DeltaGrad 
+    + https://github.com/thuwuyinjun/DeltaGrad
 5) Linear filtration à la Baumhauer et al.  
 6) Projective residual update 
 7) Obfuscation 
+    + https://github.com/lmgraves/AmnesiacML
 
 This is all definitely bounded by the amount of time that we have in order to complete the project. 
 
