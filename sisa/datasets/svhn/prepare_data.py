@@ -11,8 +11,8 @@ def url_response(url):
     for chunk in r.iter_content(chunk_size = 1024):
       if chunk:
         f.write(chunk)
-urls = [("train_32x_32.mat",'http://ufldl.stanford.edu/housenumbers/train_32x32.mat'),
-("test_32x_32.mat",'http://ufldl.stanford.edu/housenumbers/test_32x32.mat')]
+urls = [("train_32x32.mat",'http://ufldl.stanford.edu/housenumbers/train_32x32.mat'),
+("test_32x32.mat",'http://ufldl.stanford.edu/housenumbers/test_32x32.mat')]
 
 for x in urls:
   url_response(x)

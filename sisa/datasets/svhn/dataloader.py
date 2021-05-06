@@ -15,14 +15,14 @@ def mnist():
 
 train = sio.loadmat(os.path.join(pwd,'train_32x32.mat'))
 test = sio.loadmat(os.path.join(pwd,'test_32x32.mat'))
-X_train = train['X']
+X_train = train['X'].transpose([3,2,0,1])
 y_train = train['y']
 X_test = test['X']
 y_test = test['y']
 
 X_train = X_train.astype(np.float32)
 X_test = X_test.astype(np.float32)
-y_train = y_train.astype(np.int64)
+y_train = y_train.astype(np.int64).squeeze()
 y_test = y_test.astype(np.int64)
 
 def load(indices, category='train'):
